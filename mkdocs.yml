@@ -1,0 +1,7 @@
+site_name: IBM Developer
+nav:
+    - 'IoT / Node-RED / Visual Recognition Workshop' : 
+      - 'Procedure': index.md
+      - 'Create Visual Recognition Service' : create-visual-recognition-svc.md
+      - 'Import Node-RED flow' : import-flow.md
+theme: readthedocs

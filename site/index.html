@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Procedure - IBM Developer</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Procedure";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> IBM Developer</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">IoT / Node-RED / Visual Recognition Workshop</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href=".">Procedure</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#iot-fire-alarm-using-node-red-and-ibm-visual-recognition">IoT Fire Alarm using Node-RED and IBM Visual Recognition</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="create-visual-recognition-svc/">Create Visual Recognition Service</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="import-flow/">Import Node-RED flow</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">IBM Developer</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>IoT / Node-RED / Visual Recognition Workshop &raquo;</li>
+        
+      
+    
+    <li>Procedure</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="iot-fire-alarm-using-node-red-and-ibm-visual-recognition">IoT Fire Alarm using Node-RED and IBM Visual Recognition</h1>
+<p>This project is a how-to guide on using Node-RD and IBM Visual Recognition service to analyse an image and based on a trigger word then send a event command to IoT Device. In this example node-red is used to create an image upload form which sends the image to IBM Visual Recognition and trigger an iot device whenever fire is detected in the image.</p>
+<ol>
+<li>Login/signup in to your <a href="https://ibm.biz/BdYtcs">IBM Cloud Account</a></li>
+<li>Goto Catalog and create the following services:</li>
+<li>Install <a href="https://developer.ibm.com/tutorials/how-to-create-a-node-red-starter-application/">Node-RED</a>
+NOTE : Please follow the tutorial to install Node-RED in IBM Cloud</li>
+<li>
+<p>Create IBM Cloud Service <a href="https://developer.ibm.com/tutorials/cl-mqtt-bluemix-iot-node-red-app">Internet of Things Platform</a>
+NOTE : You need to create the A Platform Starter App,not Internet of things Platform service.I suggest you use the link above to quickly avoid confusion.</p>
+</li>
+<li>
+<p>Create IBM AI <a href="https://console.bluemix.net/catalog/services/visual-recognition">Visual Recognition</a></p>
+</li>
+</ol>
+<p>NOTE: You can skip steps 3,4 &amp; 9</p>
+<ol>
+<li>Goto connections tab and open IotF Service and Launch Watson Iot Platform</li>
+<li>Navigate to Devices tab and Add Device</li>
+<li>Once the Starter app is running,visit app url and configure Node-red</li>
+<li>Login to your node-red flows dashboard and import flow from <a href="https://github.com/krishnac7/IotImageAnalysis/blob/master/flows.json">flows.json</a></li>
+<li>Create new visual recognition credentials</li>
+<li>Update api key in the visual recognition node-red flow</li>
+<li>Update the device details in IBM Iot device node {Optional}</li>
+<li>Visit <node-red_app-url>/upload and upload required image</li>
+<li>Change the string inside includes from trigger action function to set a different trigger</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create-visual-recognition-svc/" class="btn btn-neutral float-right" title="Create Visual Recognition Service">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="create-visual-recognition-svc/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>
