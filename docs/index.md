@@ -6,19 +6,20 @@ This project is a how-to guide on using Node-RD and IBM Visual Recognition servi
 
 1. Login/signup in to your [IBM Cloud Account](https://ibm.biz/BdYtcs)
 2. Goto Catalog and create the following services:
- * Install [Node-RED](https://developer.ibm.com/tutorials/how-to-create-a-node-red-starter-application/)
-NOTE : Please follow the tutorial to install Node-RED in IBM Cloud
- * Create IBM Cloud Service [Internet of Things Platform](https://developer.ibm.com/tutorials/cl-mqtt-bluemix-iot-node-red-app)
-NOTE : You need to create the A Platform Starter App,not Internet of things Platform service.I suggest you use the link above to quickly avoid confusion.
+    * Install [Node-RED](https://developer.ibm.com/tutorials/how-to-create-a-node-red-starter-application/)
+     Note : Please follow the tutorial to install Node-RED in IBM Cloud
 
- * Create IBM AI [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
+    * Create IBM Cloud Service [Internet of Things Platform](https://developer.ibm.com/tutorials/cl-mqtt-bluemix-iot-node-red-app)
+NOTE : You need to create the A Platform Starter App,not Internet of things Platform service.I suggest you use the link above to quickly avoid confusion
 
-NOTE: You can skip steps 3,4 & 9
+    * Create IBM AI [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
+    
+    Note: You can skip steps 3,4 & 9
 
 3. Goto connections tab and open IotF Service and Launch Watson Iot Platform
 4. Navigate to Devices tab and Add Device
 5. Once the Starter app is running,visit app url and configure Node-red
-6. Login to your node-red flows dashboard and import flow from [flows.json](https://github.com/krishnac7/IotImageAnalysis/blob/master/flows.json)
+6. Login to your node-red flows dashboard and import flow from [flows.json](https://github.com/IraAngeles-IBM/IoTVisualRecognition)
 7. Create new visual recognition credentials
 8. Update api key in the visual recognition node-red flow
 9. Update the device details in IBM Iot device node {Optional}
