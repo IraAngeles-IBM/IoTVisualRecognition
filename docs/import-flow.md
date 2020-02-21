@@ -6,7 +6,7 @@
     ![github flow](assets/github-flows-json.png)
 
 
-2. Get the url (Routes) to open the Node-RED application 
+2. Get the url (Routes) to open the Node-RED application from IBM Cloud Resource List
 
     ![route](assets/node-red-route.png)
 

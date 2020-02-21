@@ -5,7 +5,7 @@
 
     ![resource list](assets/visual-recognition-service.png)
 
-2. Copy the API key and URL
+2. Copy the **API key** and **URL** from Visual Recognition service
 
     ![api key](assets/visual-recognition-credentials-copy.png)
 
