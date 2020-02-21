@@ -4,4 +4,8 @@ nav:
       - 'Procedure': index.md
       - 'Create Visual Recognition Service' : create-visual-recognition-svc.md
       - 'Import Node-RED flow' : import-flow.md
-theme: readthedocs
+      - 'Update Flow to add API KEY' : update-flow.md
+      - 'Upload Image' : upload-image.md
+theme: 
+  name: readthedocs
+  logo: 'images/spaces_-Lj-lTDNGxN_dypIvRDb_avatar.png'

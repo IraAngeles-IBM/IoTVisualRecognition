@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create Visual Recognition Service - IBM Developer</title>
+  <title>Upload Image - IBM Developer</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Create Visual Recognition Service";
-    var mkdocs_page_input_path = "create-visual-recognition-svc.md";
+    var mkdocs_page_name = "Upload Image";
+    var mkdocs_page_input_path = "upload-image.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -56,15 +56,9 @@
                     
     <a class="" href="..">Procedure</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Create Visual Recognition Service</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#create-ibm-ai-visual-recognition-service">Create IBM AI Visual Recognition Service</a></li>
-    
-
-    </ul>
+    <a class="" href="../create-visual-recognition-svc/">Create Visual Recognition Service</a>
                 </li>
                 <li class="">
                     
@@ -74,9 +68,15 @@
                     
     <a class="" href="../update-flow/">Update Flow to add API KEY</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../upload-image/">Upload Image</a>
+    <a class="current" href="./">Upload Image</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#upload-image-to-node-red-website">Upload Image to Node-RED website</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -107,7 +107,7 @@
         
       
     
-    <li>Create Visual Recognition Service</li>
+    <li>Upload Image</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -117,19 +117,23 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="create-ibm-ai-visual-recognition-service">Create IBM AI Visual Recognition Service</h1>
+                <h1 id="upload-image-to-node-red-website">Upload Image to Node-RED website</h1>
 <ol>
 <li>
-<p>Go to Catalog -&gt; AI -&gt; Visual Recognition (or search)</p>
-<p><img alt="visual svc" src="../assets/visual-recognition-catalog.png" /></p>
+<p>Download image from <a href="https://github.com/IraAngeles-IBM/IoTVisualRecognition">github</a> site, sample-images-fire folder.</p>
+<p><img alt="github" src="../assets/sample-images-fire.png" /></p>
 </li>
 <li>
-<p>Create Visual Recognition Service.  Use default name or preferred name.</p>
-<p><img alt="vr creation" src="../assets/visual-recognition-create.png" /></p>
+<p>Copy the Node-RED URL and append <strong>/upload</strong>, then paste in a new browser window or tab.</p>
+<p><img alt="url" src="../assets/node-red-upload.png" /></p>
 </li>
 <li>
-<p>Take note of the credentials</p>
-<p><img alt="vr credentials" src="../assets/visual-recognition-credentials.png" /></p>
+<p>Upload the sample fire image and click <strong>Submit</strong> button</p>
+<p><img alt="upload" src="../assets/node-red-upload-site.png" /></p>
+</li>
+<li>
+<p>The following is the result</p>
+<p><img alt="result" src="../assets/node-red-upload-result.png" /></p>
 </li>
 </ol>
               
@@ -139,10 +143,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../import-flow/" class="btn btn-neutral float-right" title="Import Node-RED flow">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href=".." class="btn btn-neutral" title="Procedure"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../update-flow/" class="btn btn-neutral" title="Update Flow to add API KEY"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -168,10 +170,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../update-flow/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../import-flow/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

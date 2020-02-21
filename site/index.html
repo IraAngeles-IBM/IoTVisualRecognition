@@ -70,6 +70,14 @@
                     
     <a class="" href="import-flow/">Import Node-RED flow</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="update-flow/">Update Flow to add API KEY</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="upload-image/">Upload Image</a>
+                </li>
     </ul>
 	    </li>
           
@@ -122,24 +130,23 @@
 </li>
 <li>
 <p>Create IBM Cloud Service <a href="https://developer.ibm.com/tutorials/cl-mqtt-bluemix-iot-node-red-app">Internet of Things Platform</a>
-NOTE : You need to create the A Platform Starter App,not Internet of things Platform service.I suggest you use the link above to quickly avoid confusion</p>
+Note : You need to create the A Platform Starter App,not Internet of things Platform service.I suggest you use the link above to quickly avoid confusion</p>
 </li>
 <li>
-<p>Create IBM AI <a href="https://console.bluemix.net/catalog/services/visual-recognition">Visual Recognition</a></p>
+<p>Create IBM AI <a href="create-visual-recognition-svc">Visual Recognition</a> service</p>
 </li>
 </ul>
-<p>Note: You can skip steps 3,4 &amp; 9</p>
+<p>NOTE: You can skip steps 3,4 &amp; 9</p>
 </li>
 <li>
 <p>Goto connections tab and open IotF Service and Launch Watson Iot Platform</p>
 </li>
 <li>Navigate to Devices tab and Add Device</li>
 <li>Once the Starter app is running,visit app url and configure Node-red</li>
-<li>Login to your node-red flows dashboard and import flow from <a href="https://github.com/IraAngeles-IBM/IoTVisualRecognition">flows.json</a></li>
-<li>Create new visual recognition credentials</li>
-<li>Update api key in the visual recognition node-red flow</li>
+<li><a href="import-flow/">Login to your node-red flows dashboard and import flow</a></li>
+<li><a href="update-flow">Update api key in the visual recognition node-red flow</a></li>
 <li>Update the device details in IBM Iot device node {Optional}</li>
-<li>Visit <node-red_app-url>/upload and upload required image</li>
+<li><a href="upload-image/">Visit node-red-url/upload and upload required image</a></li>
 <li>Change the string inside includes from trigger action function to set a different trigger</li>
 </ol>
               
